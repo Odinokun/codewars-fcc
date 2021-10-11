@@ -3,3 +3,8 @@
 function square(a) {
   return a **= 2;
 }
+
+var
+f=(
+)=>
+{'Hello, world!'};
