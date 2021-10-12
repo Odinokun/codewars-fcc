@@ -1,3 +1,5 @@
+// //https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/record-collection
+//
 // // Setup
 // var recordCollection = {
 //   2548: {
@@ -24,19 +26,25 @@
 // // Only change code below this line
 // function updateRecords(records, id, prop, value) {
 //   for (let recordsKey in records) {
-//         console.log(recordsKey.id.artist);
-//     // if(+recordsKey === id) {
-//     // }
+//     if (+recordsKey === id) {
+//       for (let i = 0; i < recordsKey.length; i++) {
+//         if (prop === 'tracks') {
+//           records[recordsKey][prop] = [];
+//           records[recordsKey][prop].push(value)
+//         } else if (value !== '') {
+//           records[recordsKey][prop] = value;
+//         }
+//       }
+//     }
 //   }
 //   return records;
 // }
 //
-// // updateRecords(recordCollection, 5439, 'artist', 'ABBA');
-// updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me");
-// // updateRecords(recordCollection, 2548, "artist", "");
-// // updateRecords(recordCollection, 1245, "tracks", "Addicted to Love");
-// // updateRecords(recordCollection, 2468, "tracks", "Free");
-// // updateRecords(recordCollection, 2548, "tracks", "");
-// // updateRecords(recordCollection, 1245, "albumTitle", "Riptide");
-//
-// // console.log(recordCollection);
+// console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA'));
+// console.log(updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me"));
+// console.log(updateRecords(recordCollection, 2548, "artist", ""));
+// console.log(updateRecords(recordCollection, 1245, "tracks", "Addicted to Love"));
+// console.log(updateRecords(recordCollection, 2468, "tracks", "Free"));
+// console.log(updateRecords(recordCollection, 2548, "tracks", ""));
+// console.log(updateRecords(recordCollection, 1245, "albumTitle", "Riptide"));
+// //
