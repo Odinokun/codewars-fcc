@@ -1,3 +1,11 @@
-// https://www.codewars.com/kata/5ab6538b379d20ad880000ab/train/javascript
+//https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/javascript
 
-const areaOrPerimeter = (l , w) => l === w ? l * w : (l + w) * 2;
+function isPalindrome(word) {
+  let newWord = word.split("").reverse().join("");
+  return word.toLowerCase() === newWord.toLowerCase();
+}
+
+console.log(isPalindrome('aba'));
+console.log(isPalindrome('Abba'));
+console.log(isPalindrome('hello'));
+console.log(isPalindrome('Bob'))
